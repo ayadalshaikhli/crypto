@@ -24,7 +24,7 @@ export default function Forthsection() {
       <div className="grid md:flex md:flex-row absolute top-1 md:top-24 md:ml-60 items-center md:gap-48 px-10 py-2">
         <div className="work">
           <h1 className="text-3xl md:text-5xl mb-5">
-            What's the deadline for <br /> achieving your goal?
+            Whats the deadline for <br /> achieving your goal?
           </h1>
           <p className=" leading-7 text-xl  md:leading-10  md:text-3xl text-left font-normal w-full ">
             During the Accountability Smark Contract creation process,
