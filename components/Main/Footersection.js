@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Footersection() {
@@ -12,7 +13,13 @@ export default function Footersection() {
       }}
     >
       <div>
-        <img className="w-full h-full absolute" src="/blue.jpg" alt="" />
+        <Image
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          src="/blue.jpg"
+          alt="background"
+        />
       </div>
       <div className=" flex flex-col justify-between first-letter:mt-5  md:flex md:flex-row md:justify-around absolute top-0 md:w-full text-white   md:mt-24 font-black p-10">
         <div>

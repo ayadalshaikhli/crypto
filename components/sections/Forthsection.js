@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Forthsection() {
@@ -12,11 +13,15 @@ export default function Forthsection() {
         color: "#3F3C65",
       }}
     >
-      <img style={{
-          height: "100vh",
-          width: "100%",
-        }} className="w-full" src="/forthbg.png" alt="" />
-      <div className="grid md:flex md:flex-row absolute top-2 md:top-24 md:ml-60 items-center md:gap-48 p-10">
+   
+           <Image
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          src="/forthbg.png"
+          alt="background"
+        />
+      <div className="grid md:flex md:flex-row absolute top-1 md:top-24 md:ml-60 items-center md:gap-48 px-10 py-2">
         <div className="work">
           <h1 className="text-3xl md:text-5xl mb-5">
             What's the deadline for <br /> achieving your goal?
@@ -31,9 +36,14 @@ export default function Forthsection() {
             Accountability Smart Contract.
           </p>
         </div>
-        <div>
-          <img className="mt-5 w-24 md:w-full" src="/forthicon.png" alt="" />
-        </div>
+        <div className="mt-10 h-32 relative md:w-96 md:h-96 ">
+                <Image
+                  alt="Mountains"
+                  src="/forthicon.png" 
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
       </div>
     </div>
   );

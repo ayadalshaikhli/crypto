@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Fifthsection() {
@@ -13,7 +14,14 @@ export default function Fifthsection() {
       }}
     >
       <div>
-        <img className="" src="/fifthicon.jpg" alt="" />
+          <Image 
+                layout="intrinsic"
+                width={700}
+                height={475}
+            className="" 
+            src="/fifthicon.jpg" 
+            alt="" 
+          />
       </div>
       <div className="md:w-1/2">
         <h1 className="text-2xl md:text-6xl mb-5">
